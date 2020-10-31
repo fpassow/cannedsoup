@@ -1,0 +1,49 @@
+[tool.briefcase]
+project_name = "Canned Soup"
+bundle = "com.fritzpasow.cannedsoup"
+version = "0.0.1"
+url = "https://fritzpassow.com"
+license = "MIT license"
+author = 'Fritz Passow'
+author_email = "fpassow@yahoo.com"
+
+[tool.briefcase.app.cannedsoup]
+formal_name = "Canned Soup"
+description = "Base project for Beautiful Soup scrapers packaged as native apps"
+icon = "src/cannedsoup/resources/cannedsoup"
+sources = ['src/cannedsoup']
+requires = []
+
+
+[tool.briefcase.app.cannedsoup.macOS]
+requires = [
+    'toga-cocoa>=0.3.0.dev20',
+]
+
+[tool.briefcase.app.cannedsoup.linux]
+requires = [
+    'toga-gtk>=0.3.0.dev20',
+]
+system_requires = [
+    'libgirepository1.0-dev',
+    'libcairo2-dev',
+    'libpango1.0-dev',
+    'libwebkitgtk-3.0-0',
+    'gir1.2-webkit-3.0',
+]
+
+[tool.briefcase.app.cannedsoup.windows]
+requires = [
+    'toga-winforms>=0.3.0.dev20',
+]
+
+# Mobile deployments
+[tool.briefcase.app.cannedsoup.iOS]
+requires = [
+    'toga-iOS>=0.3.0.dev20',
+]
+
+[tool.briefcase.app.cannedsoup.android]
+requires = [
+    'toga-android>=0.3.0.dev20',
+]

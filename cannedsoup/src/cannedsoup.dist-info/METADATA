@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Briefcase-Version: 0.3.3
+Name: cannedsoup
+Formal-Name: Canned Soup
+App-ID: com.fritzpasow.cannedsoup.cannedsoup
+Version: 0.0.1
+Home-page: https://fritzpassow.com
+Author: Fritz Passow
+Author-email: fpassow@yahoo.com
+Summary: Base project for Beautiful Soup scrapers packaged as native apps
